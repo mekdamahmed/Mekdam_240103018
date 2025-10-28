@@ -41,12 +41,17 @@ int main(){
     };
     
     //sort();
-
+    
+    int counter;
     for (int x =0 ; x<temp ;x++){
-        if (a[x]<a[k-1]){
-            cout << "\n"<< x-1;
+        if (a[x]>=a[k-1]){
+            continue;
+        }
+        else{
+            counter++;
         }
     }
+    cout << "\n"<< counter;
     
 
     
