@@ -4,6 +4,7 @@ using namespace std;
 
 // stack implemmentation
 class stack {
+    public:
 int top;
 int arr[size];
 
@@ -11,6 +12,7 @@ stack(){
     int top =-1;
 }
 
+bool 
 
 
 
@@ -32,8 +34,8 @@ void pop (){
         cout << "Stack empty";
     }
     else{
-        cout << arr[top];
-        top--;
+        cout << arr[top--];
+
     }
 }
 
@@ -54,7 +56,7 @@ class queuee {
     int enqueue (int x){
         front =0;
         rear=
-    };
+    }
 
     int dequeue (){
 
@@ -80,7 +82,8 @@ int main(){
 }
 
 
-// اطبق الاستاك واضيفه علي github 
-//folders /#1codeforces , /#2lab_codes /bokra elsaaa 12
+
+
+
 
 // data structure: primative(بحجز مكان واحد بس) - non primative(مش بدائية نوعين liner(array, ورا بعض) , non liner(مش ورا بعض))
