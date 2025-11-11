@@ -15,8 +15,12 @@ int main(){
         if (inp =="x++" || inp == "++x"){
             x++;
         }
-        else{
+        else if (inp =="x--" || inp == "--x") {
             x--;
+        }
+        else{
+            cout<<"wrong please enter again" << "\n";
+            i=1;
         }
     }
     cout << "x="<< x;
