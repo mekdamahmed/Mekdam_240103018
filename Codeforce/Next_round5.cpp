@@ -25,34 +25,26 @@ Output the number of participants who advance to the next round.
 using namespace std;
 int main(){
     int n;
-    int temp;
-
     int k;
+    int counter=0;
+    cin >> n >> k;
+    int members[n];
+    for (int i=0;i<n;i++){
+        cin >> members[i];
+    }
 
-    cout << "Enter the number of members: ";
-    cin >> temp;    
-    int a[temp];
-    cout << "Enter the minimum: ";
-    cin >> k;
-    for (int i=0 ; i<temp ; i++){
-        cout << "member number " << i+1 <<" :" ;
-        cin >> n;
-        a[i]=n;
-    };
-    
-    //sort();
-    
-    int counter;
-    for (int x =0 ; x<temp ;x++){
-        if (a[x]>=a[k-1]){
+    for (int i=0 ;i<n;i++){
+        if (members[i]==0){
             continue;
         }
         else{
-            counter++;
+            if(members[i]>=members[k-1]){
+                counter++;
+            }
+            else{
+                continue; 
+            }
         }
-    }
-    cout << "\n"<< counter;
-    
-
-    
+    } 
+    cout << counter;
 }
