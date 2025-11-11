@@ -16,6 +16,18 @@ The second line contains n space-separated integers a1, a2, ..., an (0 �
 Output
 Output the number of participants who advance to the next round.
 
+Input
+8 5
+10 9 8 7 7 7 5 5
+Output
+6
+
+
+Input
+4 2
+0 0 0 0
+Output
+0
 
 */
 
