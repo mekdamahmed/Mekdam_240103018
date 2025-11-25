@@ -59,7 +59,7 @@ int main(){
 /*
     while (brow!=3 && bcolom!=3){
         if (brow==3){
-            while(bcolom!=3){
+            while(brow!=3 && bcolom!=3){
                     if (bcolom>3){
                         bcolom--;
                         counter++;
@@ -71,7 +71,7 @@ int main(){
             }
         else{
             if (brow>3){
-                while(bcolom!=3){
+                while(brow!=3 && bcolom!=3){
                     if (bcolom>3){
                         bcolom--;
                         counter++;
@@ -85,7 +85,7 @@ int main(){
             counter++;
             }
             else{
-                while(bcolom!=3){
+                while(brow!=3 && bcolom!=3){
                     if (bcolom>3){
                         bcolom--;
                         counter++;

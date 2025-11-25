@@ -5,9 +5,8 @@ string username;
 cin >> username;
 int count;
 
-for(char i : username){
-    if (username.find)
-}
+for
+} 
 
 if (count%2==0){
     cout << "CHAT WITH HER!";
