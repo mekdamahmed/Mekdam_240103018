@@ -10,8 +10,13 @@ int top;
 int arr[size];
 
 
+
+int test[5];
+
+
+
 bool isFull(){
-    if (top==size -1){
+    if (top==size-1){
         return 0;
     }
     else {

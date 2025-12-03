@@ -13,8 +13,7 @@ int main(){
         cin >> y;
         cin >> z;
         if (x+y+z >=2){
-            counter++;
-            cout << x << y << z <<'\n'; 
+            counter++; 
         };
     };
     cout << counter;

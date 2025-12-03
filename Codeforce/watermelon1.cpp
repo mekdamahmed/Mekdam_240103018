@@ -3,12 +3,17 @@ using namespace std;
 int main(){
 
     int x;
-    cout << "Enter a number: ";
     cin >> x;
-    if ( x %2==0){
-        cout << "Yes";
+    if (x==2){
+        cout << "NO";
     }
     else{
-        cout << "No";
+         if ( x %2==0){
+            cout << "YES";
+        }
+        else{
+            cout << "NO";
+        }   
     }
+
 }

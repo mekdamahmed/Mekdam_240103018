@@ -2,7 +2,6 @@
 using namespace std;
 int main(){
     string inp;
-    cout << "Enter a word: ";
     cin >> inp;
     if (inp.length() <=10){
         cout << inp;

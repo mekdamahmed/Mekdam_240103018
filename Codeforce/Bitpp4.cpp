@@ -5,12 +5,12 @@ int main(){
     string inp;
     int n;
 
-    cout << "enter number of inputs: ";
+
     cin >> n;
 
     for (int i=1 ; i<=n ;i++){
-        cout << "Input number: " << i <<"\n";
-        cout << "Your operation(x++/++x , --x/x--):" ;
+        cout << i ;
+
         cin >> inp;
         if (inp =="x++" || inp == "++x"){
             x++;
@@ -19,10 +19,10 @@ int main(){
             x--;
         }
         else{
-            cout<<"wrong please enter again" << "\n";
+
             i=1;
         }
     }
-    cout << "x="<< x;
+    cout <<  x;
 }
 
