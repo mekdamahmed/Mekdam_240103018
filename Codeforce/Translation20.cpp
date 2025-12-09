@@ -1,22 +1,26 @@
 #include <iostream>
 using namespace std;
 int main(){
-string input="code";
-string translate="edoc";
+string input;
+string translate;
+
+cin >> input>> translate;
 bool check= false;
 int size = input.length();
-int anothersize=size;
 
 
-for (int i=0; i<size/2 ;i++){
-    if(input[i]==translate[anothersize]){
-        anothersize--;
+
+for (int i=0; i<size ;i++){
+    if(input[i]==translate[size-i-1] && size==translate.length()){
         check=true;
+    }
+    else{
+        check = false;
+        break;
     }
 }
 
-
-if (check==true){
+if (check){
     cout <<"YES";
 }
 else{
