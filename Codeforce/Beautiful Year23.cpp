@@ -22,13 +22,15 @@ OutputCopy
 #include <iostream>
 using namespace std;
 int main(){
-int thisyear=1987;
+int thisyear;
+cin >> thisyear;
 int nextyear=thisyear+1;
 
 int first= nextyear%10;
 int second =(nextyear/10)%10;
 int third =(nextyear/100)%10;
-int fifth= nextyear/1000;
+int fifth= nextyear/1000; 
+
 
 while (true){
     if(first!=second && first!=third && first !=fifth && second != third && second != fifth && third!=fifth){
@@ -37,7 +39,15 @@ while (true){
     }
     else{
         nextyear++;
+       
+        first= nextyear%10;
+        second =(nextyear/10)%10;
+        third =(nextyear/100)%10;
+        fifth= nextyear/1000; 
     }
 }
+
+
+
 
 }
