@@ -36,31 +36,31 @@ using namespace std;
 int main(){
     string first;
     string second;
-    int out;
-    int size= first.length();
+    cin >>first>>second;
 
-    cin>> first >> second;
 
-    for (char &i :first){
-        i=tolower(i);
-    }
-    for (char &x :second){
-        x=tolower(x);
-    }
+    for(char &inp: first){
+    if (inp>=65 && inp<=90){
+        inp= inp+32;  
+    }}
 
-    for(int i=0; i<size;i++){
-        if (first[i]==second[i]){
-            out=0;
+    for(char &inp1:second){
+    if (inp1>=65 && inp1<=90){
+        inp1= inp1+32;  
+    }}
+
+
+        if (first>second){
+            cout<<1;
+            
         }
-        else if (first[i]>second[i]){
-            out=1;
+        else if(first<second){
+            cout <<-1;
         }
         else{
-            out=-1;
+            cout<< 0;
         }
-        
-    }
-    cout <<out;
+    
+
 }
     
-//error...

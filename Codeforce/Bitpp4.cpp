@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int x;
+    int x=0;
     string inp;
     int n;
 
@@ -9,19 +9,15 @@ int main(){
     cin >> n;
 
     for (int i=1 ; i<=n ;i++){
-        cout << i ;
 
         cin >> inp;
-        if (inp =="x++" || inp == "++x"){
+        if (inp =="X++" || inp == "++X"){
             x++;
         }
-        else if (inp =="x--" || inp == "--x") {
+        else if (inp =="X--" || inp == "--X") {
             x--;
         }
-        else{
 
-            i=1;
-        }
     }
     cout <<  x;
 }
