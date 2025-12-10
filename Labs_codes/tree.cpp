@@ -74,6 +74,49 @@ using namespace std;
         else return Search(r->right, key);
     }
 
+    bool Search(int key){
+        Node* result = Search(root,key);
+        if(result==NULL)
+            return false;
+        else 
+            return true;
+    }
+
+    Node* Findmin(Node* r){
+        if(r==NULL)
+            return NULL;
+        else if(r->left==NULL)
+            return r;
+        else
+            return Findmin(r->left);
+    }
+
+    Node* Findmax(Node* r){
+        if (r==NULL)
+            return NULL;
+        else if(r->right==NULL)
+            return r;
+        else
+            return Findmax(r->right);
+    }
+
+    Node* Delete(Node* r,int key){
+        if(r==NULL)
+            return NULL;
+        if(key < r->data)
+            r->left = Delete(r->left,key);
+        else if(key> r->data)
+            r->right = Delete(r->right, key);
+        else{
+            if (r-> left == NULL && r-> right ==NULL)
+            r=NULL;
+        else if(r->left !=NULL && r->right==NULL){
+            r->data = r->left->data;
+            delete r->left;
+            r->left =NULL;
+        }
+        }
+    }
 int main(){
 
 }
