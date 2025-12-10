@@ -63,6 +63,16 @@ using namespace std;
             cout << r-> data<< "\t";
         }
     };
+    
+    Node* Search(Node* r,int key){
+        if(r==NULL)
+            return NULL;
+        else if(r->data==key)
+            return r;
+        else if(key < r->data)
+            return Search(r->left ,key);
+        else return Search(r->right, key);
+    }
 
 int main(){
 
